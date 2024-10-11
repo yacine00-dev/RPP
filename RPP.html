@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RPP.css">
+</head>
+<body>
+    <body>
+        <div><p class="title">Rock Paper Scissors</p>
+    
+        <button onclick="
+          makeMove('rock');
+        " class="move-button">
+          <img class="move-icon" src="rock-emoji.png">
+        </button>
+    
+        <button onclick="
+          makeMove('paper');
+        " class="move-button">
+          <img class="move-icon" src="paper-emoji.png">
+        </button>
+    
+        <button onclick="
+          makeMove('scissors');
+        " class="move-button">
+          <img class="move-icon" src="scissors-emoji.png">
+        </button>
+    
+        <p class="result js-result">Tie.</p>
+        <p class="js-moves-chosen">
+              You
+              <img src="scissors-emoji.png" class="move-icon">
+              <img src="scissors-emoji.png" class="move-icon">
+              Computer
+            </p>
+    
+        <p class="score js-score">
+              Wins: 9, Losses: 7, Ties: 8
+            </p>
+        <button class="reset-score-button" onclick="
+          resetScore();
+        ">
+          Reset Score
+        </button></div>
+        
+    
+        <script src="RPP.js"></script>
+      
+    
+    </body>
+</body>
+</html>
